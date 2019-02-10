@@ -40,7 +40,7 @@ font_upper_size=4; //[0:1:10]
 // size of center text
 font_center_size=3; //[0:1:10]
 // size of lower text
-font_lower_size=2; //[0:1:10]
+font_lower_size=3; //[0:1:10]
 
 /* [Hidden] */
 $fn = 64;
