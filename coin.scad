@@ -43,7 +43,7 @@ font_center_size=3; //[0:1:10]
 font_lower_size=2; //[0:1:10]
 
 /* [Hidden] */
-$fn = 256;
+$fn = 64;
 
 r1=outer_thickness/2;
 r1_dist=coin_radius-r1;
