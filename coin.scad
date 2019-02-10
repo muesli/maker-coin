@@ -58,44 +58,44 @@ module coin() {
 			union() {
 				polygon(points=[[0,0],[r1_dist,0],[r1_dist,r1,],[0,r2_dist]]);
 				translate([r1_dist,r1,0])
-                    circle(r1);
+					circle(r1);
 			}
 			// add an extra .01 to ensure they touch
 			translate([0,r2_dist,0])
-                circle(r2+.01);
+				circle(r2+.01);
 		}
 	}
 }
 
 module torus() {
-    rotate_extrude(convexity = 10) {
+	rotate_extrude(convexity = 10) {
 		translate([r1_dist,r1,0])
-            circle(r3);
-    }
+			circle(r3);
+	}
 }
 
 module logo() {
-    translate([0,(font_upper_size+font_center_size/2),1])
-        linear_extrude(r1*2)
+	translate([0,(font_upper_size+font_center_size/2),1])
+		linear_extrude(r1*2)
 			text(text_upper,font=str(font_face, ":style=", font_style),size=font_upper_size,valign="center",halign="center");
 
-    translate([0,0,1])
-        linear_extrude(r1*2)
+	translate([0,0,1])
+		linear_extrude(r1*2)
 			text(text_center,font=str(font_face, ":style=", font_style),size=font_center_size,valign="center",halign="center");
 
-    translate([0,-(font_lower_size+font_center_size/2),1])
-        linear_extrude(r1*2)
+	translate([0,-(font_lower_size+font_center_size/2),1])
+		linear_extrude(r1*2)
 			text(text_lower,font=str(font_face, ":style=", font_style),size=font_lower_size,valign="center",halign="center");
 }
 
 module notches() {
-    if (notches > 0) {
-        for (a=[0:360/notches:359]) {
-            rotate([0,0,a])
-                translate([coin_radius+notches_offset,0,0])
-                    cylinder(r=notches_radius,h=outer_thickness);
-        }
-    }
+	if (notches > 0) {
+		for (a=[0:360/notches:359]) {
+			rotate([0,0,a])
+				translate([coin_radius+notches_offset,0,0])
+					cylinder(r=notches_radius,h=outer_thickness);
+		}
+	}
 }
 
 difference() {
