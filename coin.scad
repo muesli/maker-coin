@@ -7,29 +7,29 @@
 // radius of the coin
 coin_radius=24; //[10:1:30]
 // outer height/thickness
-outer_thickness=6; //[4:1:20]
+outer_thickness=9; //[4:1:20]
 // inner height/thickness
-inner_thickness=2; //[2:1:20]
+inner_thickness=4; //[2:1:20]
 // diameter of internal torus
-torus_diameter=6; //[4:1:12]
+torus_diameter=7; //[4:1:12]
 
 /* [Notches] */
 
 // how many notches
 notches=8; //[0:1:16]
 // radius of notches
-notches_radius=24; //[1:1:36]
+notches_radius=20; //[1:1:36]
 // offset for notches
-notches_offset=22; //[1:1:34]
+notches_offset=18; //[1:1:34]
 
 /* [Logo] */
 
 // upper text
-text_upper="fribbledom";
+text_upper="mueslix";
 // center text
 text_center="@";
 // lower text
-text_lower="mastodon.social";
+text_lower="twitter.com";
 
 // font face
 font_face="Arial";
@@ -40,7 +40,7 @@ font_upper_size=4; //[0:1:10]
 // size of center text
 font_center_size=3; //[0:1:10]
 // size of lower text
-font_lower_size=3; //[0:1:10]
+font_lower_size=4; //[0:1:10]
 
 /* [Hidden] */
 $fn = 64;
